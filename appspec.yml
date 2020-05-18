@@ -1,9 +1,12 @@
 version: 0.2 
-os: windows
-files:
-  - source: \index.html
-    destination: C:\inetpub\wwwroot
-hooks:
-  BeforeInstall:
-    - location: \before-install.bat
-      timeout: 900
+os: linux
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12.x
+  build:
+    commands:
+       - touch abcd.txt
+artifacts: 
+  files: 
+    - abcd.txt

@@ -1,0 +1,9 @@
+version: 0.2 
+os: linux
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12.x
+  build:
+    commands:
+       - aws s3 sync s3://codepipeline-us-east-1-883210181159 s3://newbucket45151 --source-region us-east-1 --region us-east-1

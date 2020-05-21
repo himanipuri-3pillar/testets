@@ -6,4 +6,4 @@ phases:
       nodejs: 12.x
   build:
     commands:
-       - aws s3 sync s3://codepipeline-us-east-1-883210181159 s3://newbucket45151 --source-region us-east-1 --region us-east-1
+       - aws s3 sync s3://codepipeline-us-east-1-88321018183 s3://newbucket45151 --source-region us-east-1 --region us-east-1
